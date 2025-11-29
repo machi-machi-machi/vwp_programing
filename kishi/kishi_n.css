@@ -1,0 +1,345 @@
+body {
+  font-family: "Arial", "Poppins", "Noto Sans JP", "Creepster", "New Tegomin", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("../img/haikei.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* 背景ぼかし */
+.blur-bg {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.795);
+  z-index: -1;
+}
+
+/* 全体レイアウト：左情報＋右写真 */
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* 左側（情報） */
+.left-section {
+  flex: 1.2;
+  color: aliceblue;
+  text-align: left;
+}
+
+/* 名前 */
+.name {
+  font-family: "New Tegomin", serif;
+  font-size: 60px;
+  color: white;
+  margin-bottom: 5px;
+  text-shadow:
+    0 0 12px #fd4d4d,
+    0 0 25px #fc8d59,
+    0 0 50px #ff9100;
+}
+
+/* 異名 */
+.alias {
+  font-family: "New Tegomin", serif;
+  margin: 0 0 20px 0;
+  font-size: 25px;
+  color: #ffffff;
+  text-shadow:
+    0 0 12px #fd4d4d,
+    0 0 25px #fc8d59,
+    0 0 50px #ff9100;
+}
+
+/* プロフィール情報 */
+.profile-info p {
+  font-family: "New Tegomin", serif;
+  margin: 3px 0;
+  font-size: 24px;
+  color: aliceblue;
+}
+
+/* 円形写真＋チャート横並び */
+.profile-area {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 20px 0 40px;
+}
+
+/* 円形発光写真 */
+.profile-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid transparent;
+
+  background-image:
+    linear-gradient(#00000070, #00000070),
+    linear-gradient(135deg, #ffd700, #ff00f7, #00eaff, #ffd700);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  box-shadow:
+    0 0 12px #fd4d4d,
+    0 0 25px #fc8d59,
+    0 0 50px #ff9100;
+}
+
+/* チャート */
+.chart-wrap {
+  width: 400px;
+}
+
+/* 紹介文 */
+.description {
+  font-family: "New Tegomin", serif;
+  margin-top: 28px;
+  line-height: 1.8;
+  font-size: 28px;
+  color: aliceblue;
+}
+
+/* 右側の写真エリア */
+.right-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.photo-frame {
+  width: 100%;
+  height: 800px;
+  background: rgba(0, 0, 0, 0.541);
+  padding: 0px;body {
+  font-family: "Arial", "Poppins", "Noto Sans JP", "Creepster", "New Tegomin", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("../img/haikei.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* 背景ぼかし */
+.blur-bg {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.795);
+  z-index: -1;
+}
+
+/* 全体レイアウト：左情報＋右写真 */
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* 左側（情報） */
+.left-section {
+  flex: 1.2;
+  color: aliceblue;
+  text-align: left;
+}
+
+/* 名前 */
+.name {
+  font-family: "New Tegomin", serif;
+  font-size: 60px;
+  color: white;
+  margin-bottom: 5px;
+  text-shadow:
+    0 0 12px #fd4d4d,
+    0 0 25px #fc8d59,
+    0 0 50px #ff9100;
+}
+
+/* 異名 */
+.alias {
+  font-family: "New Tegomin", serif;
+  margin: 0 0 20px 0;
+  font-size: 25px;
+  color: #ffffff;
+  text-shadow:
+    0 0 12px #fd4d4d,
+    0 0 25px #fc8d59,
+    0 0 50px #ff9100;
+}
+
+/* プロフィール情報 */
+.profile-info p {
+  font-family: "New Tegomin", serif;
+  margin: 3px 0;
+  font-size: 24px;
+  color: aliceblue;
+}
+
+/* 円形写真＋チャート横並び */
+.profile-area {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 20px 0 40px;
+}
+
+/* 円形発光写真 */
+.profile-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid transparent;
+
+  background-image:
+    linear-gradient(#00000070, #00000070),
+    linear-gradient(135deg, #ffd700, #ff00f7, #00eaff, #ffd700);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  box-shadow:
+    0 0 12px #fd4d4d,
+    0 0 25px #fc8d59,
+    0 0 50px #ff9100;
+}
+
+/* チャート */
+.chart-wrap {
+  width: 400px;
+}
+
+/* 紹介文 */
+.description {
+  font-family: "New Tegomin", serif;
+  margin-top: 28px;
+  line-height: 1.8;
+  font-size: 28px;
+  color: aliceblue;
+}
+
+/* 右側の写真エリア */
+.right-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.photo-frame {
+  width: 100%;
+  height: 800px;
+  background: rgba(0, 0, 0, 0.541);
+  padding: 0px;
+  backdrop-filter: blur(5px);
+  display: flex;              /* ← 追加 */
+  justify-content: center;    /* ← 横方向の中央寄せ */
+  align-items: center;        /* ← 縦方向の中央寄せ */
+  
+  box-shadow:
+    0 0 12px #fd4d4d,
+    0 0 25px #fc8d59,
+    0 0 50px #ff9100;
+}
+
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* 前のページに戻るボタン追加 */
+.back-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background: #333;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.2s;
+  margin: 0 auto
+}
+
+.back-btn:hover {
+  background: #555;
+  
+}
+
+.center {
+  font-family: "New Tegomin", serif; 
+  font-size: 28px;
+  text-align: center;
+  margin: 20px 20px 100px 20px;
+}
+  backdrop-filter: blur(5px);
+  display: flex;              /* ← 追加 */
+  justify-content: center;    /* ← 横方向の中央寄せ */
+  align-items: center;        /* ← 縦方向の中央寄せ */
+  
+  box-shadow:
+    0 0 12px #fd4d4d,
+    0 0 25px #fc8d59,
+    0 0 50px #ff9100;
+}
+
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  /* 揺れ追加 */
+  transition: 0.2s;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+}
+
+/* 前のページに戻るボタン追加 */
+.back-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background: #333;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.2s;
+  margin: 0 auto
+}
+
+.back-btn:hover {
+  background: #555;
+  
+}
+
+.center {
+  font-family: "New Tegomin", serif; 
+  font-size: 28px;
+  text-align: center;
+  margin: 20px 20px 100px 20px;
+}
+
+/* 画像の揺れるアニメーション */
+@keyframes shake-small {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-2px, 1px) rotate(-1deg); }
+  40% { transform: translate(2px, -1px) rotate(1deg); }
+  60% { transform: translate(-1px, 2px) rotate(0.5deg); }
+  80% { transform: translate(1px, -2px) rotate(-0.5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
