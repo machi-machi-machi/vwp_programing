@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>友達紹介ページ</title>
+<link rel="stylesheet" href="watanabe_n.css">
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- 名前 -->
+    <h1 class="name">渡辺　悠斗</h1>
+
+    <!-- 写真 -->
+    <div class="profile-area">
+     <img src="img/yuto.jpg" alt="悠斗の写真" class="profile-img">
+      
+     <!-- レーダーチャート -->
+     <div class="chart-wrap">
+       <canvas id="radarChart"></canvas>
+     </div>
+    </div>
+    <!-- 説明欄 -->
+    <div class="description">
+      <h2>紹介</h2>
+      <p>
+        渡辺さんは仕事熱心な野心家タイプで、週末はよく仕事をしています。
+        第一印象は冷たく人に厳しい人に見られがちですが、実際はただの人見知りで緊張で何を話せばいいかわからなくなっていることがほとんどです。
+        
+      </p>
+    </div>
+
+  </div>
+
+<script src="watanabe_n.js"></script>
+</body>
+</html>

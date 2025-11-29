@@ -1,0 +1,140 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("img/haikei.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* 背景ぼかし */
+.blur-bg {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.795);
+  z-index: -1;
+}
+
+/* 全体レイアウト：左情報＋右写真 */
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* 左側（情報） */
+.left-section {
+  flex: 1.2;
+  color: aliceblue;
+  text-align: left;
+}
+
+/* 名前 */
+.name {
+  font-size: 42px;
+  color: white;
+  margin-bottom: 5px;
+  text-shadow:
+    0 0 12px #00eaff,
+    0 0 25px #ff00f7,
+    0 0 45px #ffd700;
+}
+
+/* 異名 */
+.alias {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow:
+    0 0 12px #00eaff,
+    0 0 25px #ff00f7,
+    0 0 45px #ffd700;
+}
+
+/* プロフィール情報 */
+.profile-info p {
+  margin: 3px 0;
+  font-size: 18px;
+  color: aliceblue;
+}
+
+/* 円形写真＋チャート横並び */
+.profile-area {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 20px 0 40px;
+}
+
+/* 円形発光写真 */
+.profile-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid transparent;
+
+  background-image:
+    linear-gradient(#00000070, #00000070),
+    linear-gradient(135deg, #ffd700, #ff00f7, #00eaff, #ffd700);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  box-shadow:
+    0 0 24px #ff00f7,
+    0 0 30px #00eaff,
+    0 0 60px #ffd700;
+}
+
+/* チャート */
+.chart-wrap {
+  width: 400px;
+}
+
+/* 紹介文 */
+.description {
+  margin-top: 20px;
+  line-height: 1.8;
+  font-size: 18px;
+  color: aliceblue;
+}
+
+/* 右側の写真エリア */
+.right-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-frame {
+  width: 100%;
+  height: 800px;
+  background: rgba(0, 3, 19, 0.418);
+  padding: 10px;
+  backdrop-filter: blur(5px);
+  display: flex;              /* ← 追加 */
+  justify-content: center;    /* ← 横方向の中央寄せ */
+  align-items: center;        /* ← 縦方向の中央寄せ */
+  box-shadow:
+    0 0 24px #ff00f7,
+    0 0 30px #00eaff,
+    0 0 60px #ffd700;
+}
+
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow:
+    0 0 24px #ff00f7,
+    0 0 30px #00eaff,
+    0 0 60px #ffd700;
+}
