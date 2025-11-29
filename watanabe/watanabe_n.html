@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>友達紹介ページ</title>
+<link rel="stylesheet" href="watanabe_n.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap">
+
+
+</head>
+
+<body>
+  <div class="blur-bg"></div>
+
+  <div class="container">
+
+    <!-- 左側メイン情報 -->
+    <div class="left-section">
+
+      <h1 class="name">渡辺 悠斗</h1>
+      <p class="alias">―― 料理研究家 ――</p>
+
+      <!-- 生年月日・身長 -->
+      <div class="profile-info">
+        <p>生年月日：2001年 8月 26日</p>
+        <p>身長：138cm</p>
+      </div>
+
+      <div class="profile-area">
+        <!-- 円形の写真（既存） -->
+        <img src="../img/WATANABE/watanabe.jpg" alt="悠斗の写真" class="profile-img">
+
+        <!-- レーダーチャート -->
+        <div class="chart-wrap">
+          <canvas id="radarChart"></canvas>
+        </div>
+      </div>
+
+      <!-- 紹介文 -->
+      <div class="description">
+        <p>
+          渡辺さんは仕事熱心な野心家タイプで、週末はよく仕事をしています。
+        第一印象は人に厳しく冷たい人間に見られがちですが、実はただの人見知りです。（S.I）
+        </p>
+      </div>
+    </div>
+
+    <!-- 右側の大きい写真エリア -->
+    <div class="right-photo">
+      <div class="photo-frame">
+        <img src="../img/WATANABE/watanabe2.png" alt="仮の写真">
+      </div>
+    </div>
+
+  </div>
+
+<script src="watanabe_n.js"></script>
+</body>
+
+    <!-- 前のページに戻るボタン追加 -->
+<footer>
+  <div class="center">
+   <a href="../dashBorad.html" class="back-btn"> 一覧に戻る</a>
+  </div>
+  </footer>
+</html>
+
+</html>
