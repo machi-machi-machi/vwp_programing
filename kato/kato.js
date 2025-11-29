@@ -6,7 +6,7 @@ new Chart(ctx, {
     labels: ['パワー', 'メンタル', 'スタイル', 'スピード', '知能', '協調性'],
     datasets: [{
       label: 'ステータス',
-      data: [100, 0, 65, 85, 70, 35],
+      data: [10, 0, 100, 40, 90, 30],
       fill: true,
       backgroundColor: 'rgba(223, 237, 100, 0.3)',
       borderColor: 'rgba(223, 237, 100, 1)',
