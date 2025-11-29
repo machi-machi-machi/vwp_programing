@@ -3,7 +3,7 @@ const ctx = document.getElementById('radarChart');
 new Chart(ctx, {
   type: 'radar',
   data: {
-    labels: ['攻撃力', '社交性', '面白さ', '行動力', '知識', '協調性'],
+    labels: ['パワー', 'メンタル', 'スタイル', 'スピード', '知能', '協調性'],
     datasets: [{
       label: 'ステータス',
       data: [100, 0, 65, 85, 70, 35],
