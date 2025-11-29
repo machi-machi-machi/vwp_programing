@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   });
 
-    /**
+  /**
    * 検索処理
    */
   const filterList = () => {
