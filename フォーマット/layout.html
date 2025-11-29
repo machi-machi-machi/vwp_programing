@@ -5,35 +5,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>友達紹介ページ</title>
 <link rel="stylesheet" href="layout.css">
-
-<!-- Chart.js CDN -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
+  <div class="blur-bg"></div>
+
   <div class="container">
 
-    <!-- 名前 -->
-    <h1 class="name">渡辺　悠斗</h1>
+    <!-- 左側メイン情報 -->
+    <div class="left-section">
 
-    <!-- 写真 -->
-    <div class="profile-area">
-     <img src="img/yuto.webp" alt="悠斗の写真" class="profile-img">
-      
-     <!-- レーダーチャート -->
-     <div class="chart-wrap">
-       <canvas id="radarChart"></canvas>
-     </div>
+      <h1 class="name">渡辺 悠斗</h1>
+      <p class="alias">―― 料理研究家 ――</p>
+
+      <!-- 生年月日・身長 -->
+      <div class="profile-info">
+        <p>生年月日：20xx年 x月 xx日</p>
+        <p>身長：xxxcm</p>
+      </div>
+
+      <div class="profile-area">
+        <!-- 円形の写真（既存） -->
+        <img src="img/watanabe.webp" alt="悠斗の写真" class="profile-img">
+
+        <!-- レーダーチャート -->
+        <div class="chart-wrap">
+          <canvas id="radarChart"></canvas>
+        </div>
+      </div>
+
+      <!-- 紹介文 -->
+      <div class="description">
+        <h2>紹介</h2>
+        <p>
+          渡辺さんは暗く内向的です。特にスポーツと音楽と彼女が好きで、週末はよく仕事をしています。
+          チームワークが苦手で、どんな場面でも絶対にチームをまとめません。
+        </p>
+      </div>
     </div>
-    <!-- 説明欄 -->
-    <div class="description">
-      <h2>紹介</h2>
-      <p>
-        渡辺さんは暗く内向的です。特にスポーツと音楽と彼女が好きで、
-        週末はよく仕事をしています。チームワークが苦手で、
-        どんな場面でも
-        絶対にチームをまとめません。
-      </p>
+
+    <!-- 右側の大きい写真エリア -->
+    <div class="right-photo">
+      <div class="photo-frame">
+        <img src="img/watanabe2.jpg" alt="仮の写真">
+      </div>
     </div>
 
   </div>

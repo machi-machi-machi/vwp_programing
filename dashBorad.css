@@ -33,6 +33,49 @@ body {
   100% { text-shadow: 0 0 40px #00eaff, 0 0 70px #b900ff; }
 }
 
+/* 検索エリア */
+.search-box {
+  position: relative;
+  width: 300px;
+  margin: 0 auto 50px auto;
+}
+
+/* アイコンボタン */
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-icon:hover {
+    cursor: pointer;
+}
+
+/* 入力欄 */
+#filterInput {
+  width: 100%;
+  padding: 10px 15px 10px 40px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 10px #00eaff;
+}
+
+/* カードコンテナ */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -40,7 +83,7 @@ body {
   justify-content: center;
 }
 
-/* --- 超SSRカード本体 --- */
+/* --- カード本体 --- */
 .card {
   display: flex;
   flex-direction: column;
@@ -105,6 +148,14 @@ body {
     0 0 120px #ffd700;
 }
 
+/* レアリティ */
+.rare {
+  font-size: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #f5eaff;
+}
+
 /* 画像に“SSR排出時みたいな”光演出 */
 .char-img {
   width: 100%;
@@ -160,4 +211,29 @@ body {
   font-weight: bold;
   color: #fff;
   text-shadow: 0 0 10px #00ffe5, 0 0 20px #ff00f7;
+}
+
+/* 画面上部に戻るボタン */
+#pageTopBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    color: #333;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 22px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* ホバー時 */
+#pageTopBtn:hover {
+    transform: scale(1.08);
 }

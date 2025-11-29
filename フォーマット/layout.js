@@ -14,13 +14,22 @@ new Chart(ctx, {
     }]
   },
   options: {
+    plugins: {
+      legend: {
+        labels: { color: "white" }
+      }
+    },
     scales: {
       r: {
         min: 0,
         max: 100,
-        ticks: { display: false },
-        grid: { color: '#ddd' },
-        angleLines: { color: '#ccc' }
+        ticks: { display: false, color: "white" },
+        grid: { color: '#ffffff88' },
+        angleLines: { color: '#ffffff88' },
+        pointLabels: {
+          color: "white",
+          font: { size: 16 }
+        }
       }
     }
   }
