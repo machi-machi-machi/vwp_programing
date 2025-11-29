@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const folder = id.split('_')[0];
       const urlName = `${folder}/${id}.html`;
       
-      // 別タブで開く
-      window.open(urlName, "_blank");
+      // 同タブで開く
+      window.location.href = urlName;
     })
   });
 
