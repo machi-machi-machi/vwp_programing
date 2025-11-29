@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>machida</title>
+<link rel="stylesheet" href="machida_n.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@400;700;900&family=M+PLUS+2:wght@400;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="blur-bg"></div>
+
+  <div class="container">
+
+    <!-- 左側メイン情報 -->
+    <div class="left-section">
+
+      <h1 class="name">町田 達哉</h1>
+      <p class="alias">―― 面長チンパンジー 西川口の姿 ――</p>
+
+      <!-- 生年月日・身長 -->
+      <div class="profile-info">
+        <p>生年月日：2001年 11月 14日</p>
+        <p>身長：171cm</p>
+      </div>
+
+      <div class="profile-area">
+        <!-- 円形の写真（既存） -->
+        <img src="../img/MACHIDA/PXL_20250621_005202795.PORTRAIT.jpg" alt="町田の写真" class="profile-img">
+
+        <!-- レーダーチャート -->
+        <div class="chart-wrap">
+          <canvas id="radarChart"></canvas>
+        </div>
+      </div>
+
+      <!-- 紹介文 -->
+      <div class="description">
+        <p>
+          町田はチンパンジーであり、ウッディであり、面長です。<br>
+          そのうえ大食漢であり、すき家の牛丼並を30杯は食べれると豪語している。<br>
+          センター試験の国語の点数は87点です。やればできる！！！(T.K)
+        </p>
+      </div>
+    </div>
+
+    <!-- 右側の大きい写真エリア -->
+    <div class="right-photo">
+      <div class="photo-frame">
+        <img src="../img/MACHIDA/PXL_20240907_022706560.jpg" alt="仮の写真">
+      </div>
+    </div>
+
+  </div>
+
+<script src="machida_n.js"></script>
+</body>
+
+<footer>
+  <div class="center">
+   <a href="../dashBorad.html" class="back-btn"> 一覧に戻る</a>
+  </div>
+  </footer>
+</html>
