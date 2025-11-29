@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Yu Gothic", sans-serif;
+  background: radial-gradient(circle at center, #35003a, #0c0018 70%);
+  background-attachment: fixed;
+  padding: 40px;
+  animation: bgPulse 6s infinite alternate;
+  color: #fff;
+}
+
+@keyframes bgPulse {
+  0% { filter: brightness(1); }
+  100% { filter: brightness(1.4); }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 45px;
+  font-size: 42px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 20px #ff00e6, 0 0 40px #7a00ff, 0 0 60px #00eaff;
+  animation: titleGlow 3s infinite alternate;
+}
+
+@keyframes titleGlow {
+  0% { text-shadow: 0 0 20px #ff00e6; }
+  100% { text-shadow: 0 0 40px #00eaff, 0 0 70px #b900ff; }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* --- 超SSRカード本体 --- */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  padding: 25px;
+  margin-right: 40px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+
+  /* 金色のSSR枠 */
+  border: 3px solid transparent;
+  background-image:
+    linear-gradient(#00000070, #00000070),
+    linear-gradient(135deg, #ffd700, #ff00f7, #00eaff, #ffd700);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  /* カードのオーラ */
+  box-shadow:
+    0 0 20px #ff00f7,
+    0 0 40px #00eaff,
+    0 0 80px #ffd700;
+
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+/* ぐるぐる光が走る輪エフェクト */
+.card::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    #ff00f7 90deg,
+    #00eaff 180deg,
+    #ffd700 270deg,
+    transparent 360deg
+  );
+  animation: spin 6s linear infinite;
+  opacity: 0.2;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.card:hover {
+  transform: translateY(-15px) scale(1.08);
+  box-shadow:
+    0 0 30px #ff00f7,
+    0 0 70px #00eaff,
+    0 0 120px #ffd700;
+}
+
+/* 画像に“SSR排出時みたいな”光演出 */
+.char-img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  box-shadow:
+    0 0 25px #ff00f7,
+    0 0 50px #00eaff,
+    0 0 80px #ffd700;
+  animation: imgGlow 3s infinite alternate;
+}
+
+@keyframes imgGlow {
+  0% { filter: brightness(1); }
+  100% { filter: brightness(1.4); }
+}
+
+.char-name {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  text-shadow:
+    0 0 12px #00eaff,
+    0 0 25px #ff00f7,
+    0 0 45px #ffd700;
+  animation: namePulse 2.5s infinite alternate;
+}
+
+@keyframes namePulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.07); }
+}
+
+.char-desc {
+  font-size: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #f5eaff;
+}
+
+.stats p {
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffffdd;
+  text-shadow: 0 0 6px #00ffe5;
+}
+
+.stats span {
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px #00ffe5, 0 0 20px #ff00f7;
+}
