@@ -6,7 +6,7 @@ new Chart(ctx, {
     labels: ['パワー', 'メンタル', '爆発力', 'スピード', '知能', '協調性'],
     datasets: [{
       label: 'ステータス',
-      data: [85, 40, 90, 60, 30, 45],
+      data: [115, 35, 80, 60, 15, 45],
 
       /* ▼ グラフ（塗り潰し）の色 */
       backgroundColor: 'rgba(240, 168, 73, 0.21)',
@@ -29,7 +29,7 @@ new Chart(ctx, {
           color: "white",
           font: {
             size: 18,
-            family: "New Tegomin"   // ← 凡例フォント変更
+            family: "Reggae One"   // ← 凡例フォント変更
           }
         }
       }
@@ -57,14 +57,13 @@ new Chart(ctx, {
           color: "white",
           font: {
             size: 20,
-            family: "New Tegomin"  // ← ラベルフォント変更
+            family: "Reggae One"  // ← ラベルフォント変更
           }
         }
       }
     },
 
     // ▼ 全体的にデフォルトフォントを変えたい場合
-    defaultFontFamily: "New Tegomin"
   }
 });
 
