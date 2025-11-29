@@ -3,14 +3,14 @@ const ctx = document.getElementById('radarChart');
 new Chart(ctx, {
   type: 'radar',
   data: {
-    labels: ['パワー', 'メンタル', 'スタイル', 'スピード', '知能', '協調性'],
+    labels: ['パワー', 'メンタル', 'スタミナ', 'スピード', '知能', '協調性'],
     datasets: [{
       label: 'ステータス',
-      data: [100, 0, 65, 85, 70, 35],
+      data: [40, 85, 95, 65, 70, 30],
       fill: true,
-      backgroundColor: 'rgba(223, 237, 100, 0.3)',
-      borderColor: 'rgba(223, 237, 100, 1)',
-      pointBackgroundColor: 'rgba(237, 100, 207, 1)'
+      backgroundColor: 'rgba(95, 124, 253, 0.75)',
+      borderColor: 'rgba(28, 32, 255, 1)',
+      pointBackgroundColor: 'rgba(82, 229, 255, 1)'
     }]
   },
   options: {
