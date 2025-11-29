@@ -1,0 +1,38 @@
+CSSの覚えておきたい、理解しておきたいメモ書き
+
+★ display ★
+
+    要素の表示形式のこと　https://saruwakakun.com/html-css/basic/display
+
+    // block
+    → p、div、ul、h1～h6等の初期値はこれ
+
+    　・要素が横いっぱいに広がり、縦に並んでいくイメージ
+    　・block要素の前後には、改行が入る。
+    　・幅や高さ、余白等の設定が可能
+
+    　【テク】
+    　block要素を中央に配置したい場合は、margin-right: auto; margin-right: auto; で可能
+
+
+    // inline
+    → a、span、img等のタグの初期値はこれ
+
+    　・主に文章の一部として用いられる
+    　・inline の要素同士は、改行が入らず、横に並んでいく
+    　・基本的には、block 要素内で用いられる
+    　・「text-align」や「vertical-align」で中央寄せ等が可能
+    　
+    　【不可能】
+    　・幅と高さの指定
+    　・余白の調整
+
+
+    // inline-block
+    → 要素の並び方は、inline 的で、中身は block 的な性質を持つ
+
+    　・改行が入らず、横に並ぶ
+    　・幅や高さ、余白の指定が可能
+    　・「text-align」や「vertical-align」も可能
+
+★★
