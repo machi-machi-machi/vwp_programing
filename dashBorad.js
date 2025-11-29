@@ -8,15 +8,30 @@ document.addEventListener('DOMContentLoaded', () => {
    * カード本体クリック時処理
    */
   cards.forEach(card => {
-    card.addEventListener('click', () => {
+    card.addEventListener('click', async () => {
 
       // 遷移先のhtmlファイル名を決定
       const id = card.dataset.id;
       const folder = id.split('_')[0];
       const urlName = `${folder}/${id}.html`;
-      
-      // 同タブで開く
-      window.location.href = urlName;
+
+      // 遷移先のページがない場合用のhtmlファイル名
+      const errorUrlName = 'error.html';
+
+      try {
+        // HEADリクエストで存在チェック
+        const response = await fetch (urlName, {method: 'HEAD'});
+        if (response.ok) {
+          // ページが存在する場合
+          window.location.href = urlName;
+        } else {
+          // ページが存在しない場合
+          window.location.href = errorUrlName;
+        }
+      } catch (err) {
+        // ネットワークエラー等の場合もエラーページ
+        window.location.href = errorUrlName;
+      }
     })
   });
 
