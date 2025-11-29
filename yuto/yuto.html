@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>友達紹介ページ</title>
+<link rel="stylesheet" href="yuto.css">
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- 名前 -->
+    <h1 class="name">渡辺　悠斗</h1>
+
+    <!-- 写真 -->
+    <div class="profile-area">
+     <img src="img/yuto.webp" alt="悠斗の写真" class="profile-img">
+      
+     <!-- レーダーチャート -->
+     <div class="chart-wrap">
+       <canvas id="radarChart"></canvas>
+     </div>
+    </div>
+    <!-- 説明欄 -->
+    <div class="description">
+      <h2>紹介</h2>
+      <p>
+        渡辺さんは暗く内向的です。特にスポーツと音楽と彼女が好きで、
+        週末はよく仕事をしています。チームワークが苦手で、
+        どんな場面でも
+        絶対にチームをまとめません。
+      </p>
+    </div>
+
+  </div>
+
+<script src="yuto.js"></script>
+</body>
+</html>
