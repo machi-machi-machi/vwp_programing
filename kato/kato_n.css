@@ -2,10 +2,12 @@ body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  background: url("img/haikei.jpg") no-repeat center/cover;
+  background: url("../img/haikei.jpg") no-repeat center/cover;
   background-attachment: fixed;
   position: relative;
+  font-family: "Yomogi", cursive;
 }
+
 
 /* 背景ぼかし */
 .blur-bg {
@@ -33,10 +35,12 @@ body {
   flex: 1.2;
   color: aliceblue;
   text-align: left;
+  
 }
 
 /* 名前 */
 .name {
+  
   font-size: 42px;
   color: white;
   margin-bottom: 5px;
@@ -44,17 +48,18 @@ body {
     0 0 12px #000000,
     0 0 25px #ffe600,
     0 0 45px #ffd700;
+    
 }
 
 /* 異名 */
 .alias {
   margin: 0 0 20px 0;
   font-size: 20px;
-  color: #ffffff;
+  color: #57c766;
   text-shadow:
-    0 0 12px #00eaff,
-    0 0 25px #ff00f7,
-    0 0 45px #ffd700;
+    0 0 12px #fffb00,
+    0 0 25px #ffbb00,
+    0 0 45px #ffd900;
 }
 
 /* プロフィール情報 */
@@ -82,13 +87,12 @@ body {
 
   background-image:
     linear-gradient(#00000070, #00000070),
-    linear-gradient(135deg, #ffd700, #ff00f7, #00eaff, #97937b);
+    linear-gradient(135deg, #ffd700, #ffee00, #fffb00, #97937b);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 
   box-shadow:
-    0 0 24px #ff00f7,
-    0 0 30px #00eaff,
+
     0 0 60px #ffd900;
 }
 
@@ -129,8 +133,7 @@ body {
   justify-content: center;    /* ← 横方向の中央寄せ */
   align-items: center;        /* ← 縦方向の中央寄せ */
   box-shadow:
-    0 0 24px #ff00f7,
-    0 0 30px #00eaff,
+
     0 0 60px #ffd700;
 }
 
@@ -141,8 +144,7 @@ body {
   object-fit: cover;
   border-radius: 8px;
   box-shadow:
-    0 0 24px #ff00f7,
-    0 0 30px #00eaff,
+
     0 0 60px #ffd700;
 }
 
@@ -150,8 +152,8 @@ body {
 .back-btn {
   display: inline-block;
   padding: 10px 20px;
-  color: white;
-  background: #333;
+  color: rgb(0, 0, 0);
+  background: #b1a828;
   text-decoration: none;
   border-radius: 8px;
   transition: 0.2s;
@@ -160,7 +162,7 @@ body {
 }
 
 .back-btn:hover {
-  background: #555;
+  background: #606607;
   
 }
 
