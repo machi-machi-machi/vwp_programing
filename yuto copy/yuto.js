@@ -3,11 +3,7 @@ const ctx = document.getElementById('radarChart');
 new Chart(ctx, {
   type: 'radar',
   data: {
-<<<<<<< HEAD:yuto copy/yuto.js
-    labels: ['パワー', 'メンタル', 'スタミナ', 'スピード', '知能', '協調性'],
-=======
     labels: ['パワー', 'メンタル', 'スタイル', 'スピード', '知能', '協調性'],
->>>>>>> kurosaki:yuto/yuto.js
     datasets: [{
       label: 'ステータス',
       data: [100, 0, 65, 85, 70, 35],
