@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>友達紹介ページ</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="kurosaki_n.css">
+  <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Yuji+Boku&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- 背景ぼかし -->
+  <div class="blur-bg"></div>
+
+  <div class="container">
+
+    <!-- 左側メイン情報 -->
+    <div class="left-section">
+      <h1 class="name">黒崎 巧真</h1>
+      <p class="alias">―― 黒崎君の言いなりになんてならない ――</p>
+
+      <!-- 生年月日・身長 -->
+      <div class="profile-info">
+        <p>生年月日：2001年 10月 16日</p>
+        <p>身長：175cm</p>
+      </div>
+
+      <!-- 写真とレーダーチャート -->
+      <div class="profile-area">
+        <!-- 写真 -->
+        <img src="../img/KUROSAKI/kurosaki.png" alt="黒崎の写真" class="profile-img">
+        <!-- レーダーチャート -->
+        <div class="chart-wrap">
+          <canvas id="radarChart"></canvas>
+        </div>
+      </div>
+
+      <!-- 紹介文 -->
+      <div class="description">
+        <p>なんでもある程度はこなせる器用貧乏タイプです。
+          <br>寝起きの悪さを何とかしましょう。（S.I）
+        </p>
+      </div>
+    </div>
+
+    <!-- 右側の大きい写真エリア -->
+    <div class="right-photo">
+      <div class="photo-frame">
+        <img src="../img/KUROSAKI/kurosaki2.jpg" alt="黒崎の写真">
+      </div>
+    </div>
+  </div>
+
+  <script src="kurosaki_n.js"></script>
+</body>
+
+<!-- 前のページに戻るボタン追加 -->
+<footer>
+  <div class="center">
+    <a href="../dashBorad.html" class="back-btn"> 一覧に戻る</a>
+  </div>
+</footer>
+
+</html>
