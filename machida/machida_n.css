@@ -8,6 +8,8 @@ body {
 
 }
 
+
+
 /* 背景ぼかし */
 .blur-bg {
   position: fixed;
@@ -163,4 +165,91 @@ body {
 .center {
   text-align: center;
   margin: 20px 20px 100px 20px;
+}
+
+
+
+
+
+
+/*以降ダイアログ*/
+
+button {
+  padding: 5px 5px;
+  font-size: 10px;
+  color: #ffffff;
+  background-color: #ff00dd;
+  border-radius: 100px;
+}
+
+/* モーダル背景 */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  /* 🌈 放射状の虹色（真ん中から広がる） */
+  background: radial-gradient(
+    circle,
+    rgba(255, 0, 64, 0.7),
+    rgba(255, 123, 0, 0.7),
+    rgba(255, 230, 0, 0.7),
+    rgba(33, 255, 0, 0.7),
+    rgba(0, 195, 255, 0.7),
+    rgba(111, 0, 255, 0.7),
+    rgba(255, 0, 200, 0.7)
+  );
+  background-size: 200% 200%;
+  animation: rainbowRadial 8s infinite ease;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🌈 放射状の虹色を揺らすアニメーション */
+@keyframes rainbowRadial {
+  0%   { background-position: 50% 50%; }
+  50%  { background-position: 100% 100%; }
+  100% { background-position: 50% 50%; }
+}
+
+/* モーダル内の白枠（画像部分） */
+.modal-content {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 90%;
+  max-height: 90%;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+/* 画像 */
+.modal-img {
+  width: 1000px;
+  height: auto;
+  border-radius: 100px;
+}
+
+/* ×ボタン */
+.close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

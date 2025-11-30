@@ -1,4 +1,7 @@
 const ctx = document.getElementById('radarChart');
+const openBtn = document.getElementById("openBtn");
+const modal = document.getElementById("modal");
+const closeBtn = document.getElementById("closeBtn");
 
 new Chart(ctx, {
   type: 'radar',
@@ -32,5 +35,24 @@ new Chart(ctx, {
         }
       }
     }
+  }
+});
+
+
+//以降ダイアログ関連
+// 開く
+openBtn.addEventListener("click", () => {
+  modal.style.display = "flex";
+});
+
+// 閉じる
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// 背景クリックで閉じる
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
   }
 });
