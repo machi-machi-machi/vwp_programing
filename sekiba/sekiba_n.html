@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sekiba</title>
+<link rel="stylesheet" href="sekiba_n.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="blur-bg"></div>
+
+  <div class="container">
+
+    <!-- 左側メイン情報 -->
+    <div class="left-section">
+
+      <h1 class="name">関場 樹</h1>
+      <p class="alias">―― 筋肉 Irish ――</p>
+
+      <!-- 生年月日・身長 -->
+      <div class="profile-info">
+        <p>生年月日：2001年 9月 24～27日※その年による</p>
+        <p>身長：172mm</p>
+      </div>
+
+      <div class="profile-area">
+        <!-- 円形の写真（既存） -->
+        <img src="../img/SEKIBA/82654_0.jpg" alt="樹の写真" class="profile-img">
+
+        <div class="hover-popup">
+          <img src="../img/SEKIBA/ketsui.png" alt="">
+        </div>
+
+        <!-- レーダーチャート -->
+        <div class="chart-wrap">
+          <canvas id="radarChart"></canvas>
+        </div>
+      </div>
+
+      <!-- 紹介文 -->
+      <div class="description">
+        
+        <p>
+          アイルランドから留学中の彼は、なぜか筋肉に異様な執着持っている。<br>
+          これは母国のボディビルダーに虐げられていた経験からきていると周りの人間は考察している。<br>
+          一定の筋肉量に達すると、母国語でしゃべり始める。<br>
+          「レックウザの枕として呼ばれました。」by I.S<br>
+          (T.K)
+         </p>
+      </div>
+    </div>
+
+    <!-- 右側の大きい写真エリア -->
+    <div class="right-photo">
+      <div class="photo-frame">
+        <img src="../img/SEKIBA/PXL_20250505_060228425.jpg" alt="仮の写真">
+      </div>
+    </div>
+
+  </div>
+
+<script src="sekiba_n.js"></script>
+</body>
+
+<footer>
+  <div class="center">
+   <a href="../dashBorad.html" class="back-btn"> 一覧に戻る</a>
+  </div>
+  </footer>
+</html>
