@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>キャラクター能力一覧</title>
+  <link rel="stylesheet" href="dashBorad.css">
+  <script src="dashBorad.js"></script>
+</head>
+<body>
+
+<h1 class="title">キャラクター能力一覧</h1>
+
+    <!-- 検索 -->
+    <div class="search-box">
+        <button class="search-icon" id="searchButton">
+            <svg class="icon-svg" viewBox="0 0 24 24" width="20" height="20">
+            <path fill="none" stroke="white" stroke-width="2"
+                d="M11 4a7 7 0 1 1-4.95 11.95L3 19l3.05-3.05A7 7 0 0 1 11 4z"/>
+            </svg>
+        </button>
+
+        <input type="text" id="filterInput" placeholder="検索">
+    </div>
+
+    <!-- カードコンテナ -->
+    <div class="container">
+
+        <!-- 町田 -->
+        <div class="card" data-id="machida_n">
+            <p class="rare">UR</p>
+            <img src="\img\MACHIDA\tenshi_machida.jpg" alt="町田" class="char-img">
+            <h2 class="char-name">町田 達哉</h2>
+            <p class="char-desc">神の子</p>
+
+            <div class="stats">
+            <p>攻撃力：<span>85</span></p>
+            <p>防御力：<span>60</span></p>
+            <p>素早さ：<span>90</span></p>
+            <p>魔力：<span>40</span></p>
+            </div>
+        </div>
+
+        <!-- 黒崎 -->
+        <div class="card" data-id="kurosaki_n">
+            <p class="rare">UR</p>
+            <img src="\img\KUROSAKI\kurosaki_warudakumi.jpg" alt="黒崎" class="char-img">
+            <h2 class="char-name">黒崎 巧真</h2>
+            <p class="char-desc">悪の根源</p>
+
+            <div class="stats">
+            <p>攻撃力：<span>40</span></p>
+            <p>防御力：<span>55</span></p>
+            <p>素早さ：<span>70</span></p>
+            <p>魔力：<span>95</span></p>
+            </div>
+        </div>
+
+        <!-- 関場 -->
+        <div class="card" data-id="sekiba_n">
+            <p class="rare">UR</p>
+            <img src="\img\SEKIBA\sekiba_ghost.jpg" alt="関場" class="char-img">
+            <h2 class="char-name">関場 樹</h2>
+            <p class="char-desc">成仏し忘れ・・・</p>
+
+            <div class="stats">
+            <p>攻撃力：<span>0</span></p>
+            <p>防御力：<span>0</span></p>
+            <p>素早さ：<span>0</span></p>
+            <p>魔力：<span>105</span></p>
+            </div>
+        </div>
+
+        <!-- 加藤 -->
+        <div class="card" data-id="kato_n">
+            <p class="rare">UR</p>
+            <img src="\img\KATO\kato_sisonjyun.jpg" alt="加藤" class="char-img">
+            <h2 class="char-name">加藤 大輝</h2>
+            <p class="char-desc">志尊淳？？？</p>
+
+            <div class="stats">
+            <p>攻撃力：<span>0</span></p>
+            <p>防御力：<span>0</span></p>
+            <p>素早さ：<span>0</span></p>
+            <p>魔力：<span>105</span></p>
+            </div>
+        </div>
+
+        <!-- 渡辺 -->
+        <div class="card" data-id="watanabe_n">
+            <p class="rare">UR</p>
+            <img src="img\WATANABE\yuto_toshimaen.jpg" alt="渡辺" class="char-img">
+            <h2 class="char-name">渡辺 悠斗</h2>
+            <p class="char-desc">としまえん制作関与</p>
+
+            <div class="stats">
+            <p>攻撃力：<span>0</span></p>
+            <p>防御力：<span>0</span></p>
+            <p>素早さ：<span>0</span></p>
+            <p>魔力：<span>105</span></p>
+            </div>
+        </div>
+
+        <!-- 岸 -->
+        <div class="card" data-id="kishi_n">
+            <p class="rare">R</p>
+            <img src="img/KISHI/kishi_tenkinoko.jpg" alt="岸" class="char-img">
+            <h2 class="char-name">岸 祐樹</h2>
+            <p class="char-desc">みんなを守ります</p>
+
+            <div class="stats">
+            <p>攻撃力：<span>3</span></p>
+            <p>防御力：<span>0</span></p>
+            <p>素早さ：<span>4</span></p>
+            <p>魔力：<span>1</span></p>
+            </div>
+        </div>
+
+        <!-- 高島 -->
+        <div class="card" data-id="takashima_n">
+            <p class="rare">UR</p>
+            <img src="img\TAKASHIMA\takashima_face1.jpg" alt="高島" class="char-img">
+            <h2 class="char-name">高島 綾太</h2>
+            <p class="char-desc">王子</p>
+
+            <div class="stats">
+            <p>攻撃力：<span>0</span></p>
+            <p>防御力：<span>0</span></p>
+            <p>素早さ：<span>0</span></p>
+            <p>魔力：<span>105</span></p>
+            </div>
+        </div>
+
+        <!-- シークレット -->
+        <div class="card" data-id="himitsu_n">
+            <p class="rare">？？？</p>
+            <h2 class="char-name">シークレット</h2>
+            <p class="char-desc">この先は行った人にしかわからない</p>
+        </div>
+
+    </div>
+
+    <!-- 上部へ戻る -->
+    <a href="#" id="pageTopBtn">▲</a>
+</body>
+</html>
