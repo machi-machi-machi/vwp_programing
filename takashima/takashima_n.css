@@ -1,3 +1,4 @@
+/* 全体 --------------------------------------------------*/
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
@@ -17,7 +18,7 @@ body {
   z-index: -1;
 }
 
-/* 全体レイアウト：左情報＋右写真 */
+/* 左右レイアウト */
 .container {
   width: 90%;
   max-width: 1400px;
@@ -28,7 +29,7 @@ body {
   align-items: flex-start;
 }
 
-/* 左側（情報） */
+/* 左側 --------------------------------------------------*/
 .left-section {
   flex: 1.2;
   color: aliceblue;
@@ -72,34 +73,71 @@ body {
   margin: 20px 0 40px;
 }
 
-/* 円形発光写真 */
-.profile-img {
+/* ----- ここから写真2枚重ねセット ----- */
+.photo-layer {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+/* 共通のスタイル */
+.photo {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 250px;
   height: 250px;
   object-fit: cover;
   border-radius: 50%;
+  transition: transform 1.8s, box-shadow 1.8s;
+}
+
+/* 写真両方の設定 */
+.photo {
   border: 3px solid transparent;
-  transition: 1.8s;
   background-image:
     linear-gradient(#00000070, #00000070),
     linear-gradient(135deg, #ffd700, #ff00f7, #00eaff, #ffd700);
   background-origin: border-box;
   background-clip: padding-box, border-box;
-
   box-shadow:
     0 0 12px #00eaff,
     0 0 25px #57e7e7,
     0 0 45px #309eb9;
 }
 
-/* マウスが乗った時 */
-.profile-img:hover {
+/* front写真*/
+.profile-front {
+  z-index: 2;
+  opacity: 1;
+}
+
+/* back写真*/
+.profile-back {
+  z-index: 1;
+  opacity: 0;
+}
+
+/* ホバー時の front の動き */
+.photo-layer:hover .photo {
   transform: translateX(180px) scale(3.5);
   box-shadow:
     0 0 12px #019915,
     0 0 50px #1648ec,
     0 0 100px #2313b8;
 }
+
+/* front/back の入れ替え（JSがswapクラスを付与） */
+.photo-layer.swap .profile-front {
+  opacity: 0;
+}
+
+.photo-layer.swap .profile-back {
+  opacity: 1;
+}
+
+/* ------ 写真セット ここまで------ */
+
 
 /* チャート */
 .chart-wrap {
@@ -114,7 +152,8 @@ body {
   color: aliceblue;
 }
 
-/* 右側の写真エリア */
+
+/* 右側 --------------------------------------------------*/
 .right-photo {
   flex: 1;
   display: flex;
@@ -127,15 +166,14 @@ body {
   background: rgba(0, 3, 19, 0.418);
   padding: 10px;
   backdrop-filter: blur(5px);
-  display: flex;              /* ← 追加 */
-  justify-content: center;    /* ← 横方向の中央寄せ */
-  align-items: center;        /* ← 縦方向の中央寄せ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow:
     0 0 12px #00eaff,
     0 0 25px #57e7e7,
     0 0 45px #309eb9;
 }
-
 
 .photo-frame img {
   width: 100%;
@@ -149,6 +187,7 @@ body {
 }
 
 
+/* 戻るボタン */
 .back-btn {
   display: inline-block;
   padding: 10px 20px;
@@ -158,12 +197,10 @@ body {
   border-radius: 8px;
   transition: 0.2s;
   margin: 0 auto
-  
 }
 
 .back-btn:hover {
   background: #555;
-  
 }
 
 .center {

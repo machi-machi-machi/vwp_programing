@@ -34,3 +34,18 @@ new Chart(ctx, {
     }
   }
 });
+
+// ★ 写真切り替え
+const layer = document.querySelector(".photo-layer");
+let timer;
+
+layer.addEventListener("mouseenter", () => {
+  timer = setTimeout(() => {
+    layer.classList.add("swap");
+  }, 1800);
+});
+
+layer.addEventListener("mouseleave", () => {
+  clearTimeout(timer);
+  layer.classList.remove("swap");
+});
