@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>友達紹介ページ</title>
+<link rel="stylesheet" href="takashima_n.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="blur-bg"></div>
+
+  <div class="container">
+
+    <!-- 左側メイン情報 -->
+    <div class="left-section">
+
+      <h1 class="name"> 高島  綾太 </h1>
+      <p class="alias">―― ダイエッター ――</p>
+
+      <!-- 生年月日・身長 -->
+      <div class="profile-info">
+        <p>生年月日：2001年 10月 9日</p>
+        <p>体重：172kg</p>
+      </div>
+
+      <div class="profile-area">
+         <!-- 円形の写真（既存） -->
+        <div class="photo-layer">
+  <img src="../img/TAKASHIMA/takashima.jpg" alt="高島真顔拡大写真" class="photo profile-front">
+  <img src="../img/TAKASHIMA/takashimaup.jpg" alt="高島変顔拡大写真" class="photo profile-back">
+</div>
+
+        
+        <!-- レーダーチャート -->
+        <div class="chart-wrap">
+          <canvas id="radarChart"></canvas>
+        </div>
+      </div>
+
+      <!-- 紹介文・翻訳前 -->
+      <div class="description">
+        <p id="text-1" data-original="مرحباً بالجميع، اسمي تاكاشيما. هوايتي هي خوض النقاشات الحامية على موقع ياهو تشيهبوكورو ولم أعترف بالهزيمة قط. أتقنت اختبارات MBTI وأنواع الحب بالكامل. لدي عادة التحدث بالإسبانية دون وعي، وقد اشتريت جميع الأسهم بالفعل. كنت أخفي الأمر، لكن في الحقيقة أنا النموذج الذي استُلهمت منه شخصية سون غوكو. كما أنني أستطيع تناول كميات كبيرة من الطعام.">
+          مرحباً بالجميع، اسمي تاكاشيما. هوايتي هي خوض النقاشات الحامية على موقع ياهو تشيهبوكورو ولم أعترف بالهزيمة قط. أتقنت اختبارات MBTI وأنواع الحب بالكامل. لدي عادة التحدث بالإسبانية دون وعي، وقد اشتريت جميع الأسهم بالفعل. كنت أخفي الأمر، لكن في الحقيقة أنا النموذج الذي استُلهمت منه شخصية سون غوكو. كما أنني أستطيع تناول كميات كبيرة من الطعام.
+        </p>
+        <button class="translate-btn"
+          onclick="translateText('text-1', '初めまして、自己紹介ってなんだか照れるね。僕の名前は高島。将来の夢はプロバスケットボール卓球。半端な奴から半分にしていきます。結婚しろ。お前のこと高島って呼んでいい？')">
+          翻訳
+        </button>
+      </div>
+
+      <script>
+        function translateText(targetId, translatedText) {
+          const el = document.getElementById(targetId);
+          if (!el) return;
+
+          const originalText = el.getAttribute("data-original");
+
+          if (el.textContent.trim() === originalText.trim()) {
+            // 今は原文 → 翻訳文にする
+            el.textContent = translatedText;
+          } 
+          else {
+            // 今は翻訳文 → 原文に戻す
+            el.textContent = originalText;
+          }
+        }        
+      </script>
+
+    </div>
+
+    <!-- 右側の大きい写真エリア -->
+    <div class="right-photo">
+      <div class="photo-frame">
+        <img src="../img/TAKASHIMA/takashima2.jpg" alt="仮の写真">
+      </div>
+    </div>
+
+  </div>
+
+<script src="takashima_n.js"></script>
+</body>
+
+<footer>
+  <div class="center">
+   <a href="../index.html" class="back-btn"> 一覧に戻る</a>
+  </div>
+  </footer>
+</html>
