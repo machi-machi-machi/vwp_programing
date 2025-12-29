@@ -34,3 +34,10 @@ new Chart(ctx, {
     }
   }
 });
+
+
+const bgm = document.getElementById("bgm");
+document.getElementById("sound-btn").onclick = () => {
+  bgm.play();
+  bgm.volume = 0.4;
+};

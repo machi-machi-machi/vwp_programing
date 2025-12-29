@@ -2,7 +2,7 @@ body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  background: url("../img/YAMANAKA/esupa.jpg") no-repeat center/cover;
+  background: url("../img/YAMANAKA/esupa.jpg") no-repeat center/cover; 
   background-attachment: fixed;
   position: relative;
 }
@@ -13,7 +13,7 @@ body {
   inset: 0;
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
-  background-color: rgba(0, 0, 0, 0.795);
+  background-color: rgba(0, 0, 0, 0.500);
   z-index: -1;
 }
 
@@ -160,4 +160,9 @@ body {
 .center {
   text-align: center;
   margin: 20px 20px 100px 20px;
+}
+
+
+#bgm {
+  display: none;
 }
