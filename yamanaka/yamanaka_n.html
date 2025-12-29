@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>友達紹介ページ</title>
+<link rel="stylesheet" href="yamanaka_n.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="blur-bg"></div>
+
+  <div class="container">
+
+    <!-- 左側メイン情報 -->
+    <div class="left-section">
+
+      <h1 class="name">山中 啓夢</h1>
+      <p class="alias">―― Fortniteサッカー先生 ――</p>
+
+      <!-- 生年月日・身長 -->
+      <div class="profile-info">
+        <p>生年月日：2001年 11月 8日</p>
+        <p>身長：xxxcm</p>
+      </div>
+
+      <div class="profile-area">
+        <!-- 円形の写真（既存） -->
+        <img src="../img/YAMANAKA/kareshi.jpg" alt="啓夢の写真" class="profile-img">
+
+        <!-- レーダーチャート -->
+        <div class="chart-wrap">
+          <canvas id="radarChart"></canvas>
+        </div>
+      </div>
+
+      <!-- 紹介文 -->
+      <div class="description">
+        <h2>紹介</h2>
+        <p>
+          啓夢さんはとても温厚でマイペースな生き物です楽と彼女が好きで、週末はよく仕事をしています。
+          チームワークが苦手で、どんな場面でも絶対にチームをまとめません。
+        </p>
+      </div>
+    </div>
+
+    <!-- 右側の大きい写真エリア -->
+    <div class="right-photo">
+      <div class="photo-frame">
+        <img src="../img/YAMANAKA/ryokou.jpg" alt="啓夢の写真">
+      </div>
+    </div>
+
+  </div>
+
+<script src="yamanaka_n.js"></script>
+</body>
+
+<footer>
+  <div class="center">
+   <a href="../index.html" class="back-btn"> 一覧に戻る</a>
+  </div>
+  </footer>
+</html>
