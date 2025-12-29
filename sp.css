@@ -1,6 +1,10 @@
 /* ===== スマホ表示最適化 ===== */
 @media (max-width: 768px) {
 
+  body {
+    background-attachment: scroll;
+  }
+
   /* 全体を縦並びに */
   .container {
     flex-direction: column;
