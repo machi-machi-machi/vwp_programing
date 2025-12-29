@@ -142,7 +142,7 @@ body {
   flex: 1;
   display: flex;
   justify-content: center;
-  margin-top: 350px;
+  /* margin-top: 350px; */
 }
 
 .photo-frame {
