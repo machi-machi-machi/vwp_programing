@@ -29,6 +29,17 @@ body {
 }
 
 /* ===== ログインカード ===== */
+.login-title {
+  position: relative;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 52px;
+  letter-spacing: 8px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
 .login-box {
   width: 100%;
   max-width: 380px;
